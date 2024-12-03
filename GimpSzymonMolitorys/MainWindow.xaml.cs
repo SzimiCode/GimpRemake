@@ -69,6 +69,7 @@ namespace GimpSzymonMolitorys
             }
         }
 
+
         private void paintSurface_MouseMove(object sender, MouseEventArgs e)
         {
             //we checked whether we have our button pressed and it's drawstyle freely, so we can draw
