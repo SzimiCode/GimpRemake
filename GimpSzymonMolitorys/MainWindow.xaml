@@ -1,0 +1,45 @@
+﻿<Window x:Class="GimpSzymonMolitorys.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GimpSzymonMolitorys"
+        mc:Ignorable="d"
+        Title="Gism" Height="600" Width="1000">
+    <Grid>
+        <Canvas Name="paintSurface" MouseDown="paintSurface_MouseDown" MouseMove="paintSurface_MouseMove" MouseLeftButtonDown="paintSurface_MouseLeftButtonDown">
+            <Canvas.Background>
+                <SolidColorBrush Color="White" Opacity="1"/>
+            </Canvas.Background>
+        </Canvas>
+        <ToolBarPanel VerticalAlignment="Top">
+            <ToolBar>
+                <Button x:Name="btnDraw" Click="btnDraw_Click">
+                    Paint Freely 
+                </Button>
+                <Button x:Name="btnPoints" Click="btnPoints_Click">
+                    Paint points
+                </Button>
+                <Button x:Name="btnLines" Click="btnLines_Click">
+                    Paint lines
+                </Button>
+                <Menu>
+                    <MenuItem Header="Lines">
+                        <MenuItem Header="Paint Lines"/>
+                        <MenuItem Header="Edit Lines"/>
+                    </MenuItem>
+                </Menu>
+                <Menu>
+                    <MenuItem Header="Figures">
+                        <MenuItem x:Name="drawEllipse" Header="Ellipse" Click="drawEllipse_Click" />
+                        <MenuItem x:Name="drawRectangle" Header="Rectangle" Click="drawRectangle_Click" />
+                        <MenuItem x:Name="drawPolygon" Header="Polygon" Click="drawPolygon_Click" />
+                        <MenuItem x:Name="drawTree" Header="Christmas Tree" Click="drawTree_Click" />
+                        <MenuItem x:Name="drawHeart" Header="Heart" Click="drawHeart_Click" />
+                        <MenuItem x:Name="drawStar" Header="Star" Click="drawStar_Click" />
+                    </MenuItem>
+                </Menu>
+            </ToolBar>
+        </ToolBarPanel>
+    </Grid>
+</Window>

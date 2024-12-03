@@ -1,0 +1,30 @@
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.exe.config
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.exe
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.pdb
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\MainWindow.g.cs
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\App.g.cs
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys_MarkupCompile.cache
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys_MarkupCompile.lref
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\MainWindow.baml
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.g.resources
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.Properties.Resources.resources
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.GenerateResource.cache
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.exe
+C:\Users\Student\Documents\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.pdb
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.exe.config
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.exe
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.pdb
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.AssemblyReference.cache
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\MainWindow.g.cs
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\App.g.cs
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys_MarkupCompile.cache
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys_MarkupCompile.lref
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\MainWindow.baml
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.g.resources
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.Properties.Resources.resources
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.GenerateResource.cache
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.CoreCompileInputs.cache
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.exe
+C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.pdb
