@@ -370,6 +370,73 @@ namespace GimpSzymonMolitorys
                 paintSurface.Children.Add(triangle);
 
             }
+            if(drawStyle == 15)
+            {
+                Rectangle rect = new Rectangle();
+                rect.Width = 20;
+                rect.Height = 30;
+
+                Brush brushColor = new SolidColorBrush(Colors.Black);
+
+                Canvas.SetTop(rect, e.GetPosition(this).Y);
+                Canvas.SetLeft(rect, e.GetPosition(this).X - rect.Width / 2);
+
+                double mouseX = e.GetPosition(this).X;
+                double mouseY = e.GetPosition(this).Y;
+
+                double triangleWidth = 50;
+                double triangleHeight = 50;
+
+
+                Point topPoint = new Point(mouseX, mouseY - triangleHeight);
+                Point leftPoint = new Point(mouseX - triangleWidth / 2, mouseY);
+                Point rightPoint = new Point(mouseX + triangleWidth / 2, mouseY);
+
+                Polygon triangle = new Polygon
+                {
+                    Points = new PointCollection { topPoint, leftPoint, rightPoint },
+
+                };
+                double triangleWidth2 = 40;
+                double triangleHeight2 = 40;
+
+
+                Point topPoint2 = new Point(mouseX, mouseY - triangleHeight - triangleHeight2);
+                Point leftPoint2 = new Point(mouseX - triangleWidth2 / 2, mouseY - triangleHeight);
+                Point rightPoint2 = new Point(mouseX + triangleWidth2 / 2, mouseY - triangleHeight);
+
+                Polygon triangle2 = new Polygon
+                {
+                    Points = new PointCollection { topPoint2, leftPoint2, rightPoint2 },
+
+                };
+
+                double triangleWidth3 = 30;
+                double triangleHeight3 = 30;
+
+
+                Point topPoint3 = new Point(mouseX, mouseY - triangleHeight2 - triangleHeight - triangleHeight3);
+                Point leftPoint3 = new Point(mouseX - triangleWidth3 / 2, mouseY - triangleHeight2 - triangleHeight);
+                Point rightPoint3 = new Point(mouseX + triangleWidth3 / 2, mouseY - triangleHeight2 - triangleHeight);
+
+                Polygon triangle3 = new Polygon
+                {
+                    Points = new PointCollection { topPoint3, leftPoint3, rightPoint3 },
+
+                };
+
+
+
+                triangle3.Stroke = brushColor;
+                triangle2.Stroke = brushColor;
+                triangle.Stroke = brushColor;
+                rect.Stroke = brushColor;
+
+                paintSurface.Children.Add(triangle);
+                paintSurface.Children.Add(rect);
+                paintSurface.Children.Add(triangle2);
+                paintSurface.Children.Add(triangle3);
+            }
         }
 
         private void drawPolygon_Click(object sender, RoutedEventArgs e)
