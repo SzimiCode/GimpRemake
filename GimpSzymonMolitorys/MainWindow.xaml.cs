@@ -219,48 +219,45 @@ namespace GimpSzymonMolitorys
                 double mouseX = e.GetPosition(this).X;
                 double mouseY = e.GetPosition(this).Y;
 
-                double polySize = 30;
+                double polySize = 30; // Rozmiar gwiazdy
 
-                Point point1 = new Point(mouseX, mouseY + 3 * polySize);
-                Point point9 = new Point(mouseX + polySize, mouseY + polySize);
-                Point point2 = new Point(mouseX + 3*polySize, mouseY + polySize);
-                Point point3 = new Point(mouseX + polySize, mouseY );
-                Point point10 = new Point(mouseX + 2 * polySize, mouseY - 2 * polySize);
-                Point point5 = new Point(mouseX, mouseY - polySize);
-                Point point7 = new Point(mouseX - 2 * polySize, mouseY + 2*polySize);
-                Point point6 = new Point(mouseX - polySize, mouseY);
-                Point point8 = new Point(mouseX - 3 * polySize, mouseY + polySize);
-                Point point4 = new Point(mouseX - polySize , mouseY + polySize);
-                
+                // Określamy punkty ręcznie
+                Point point1 = new Point(mouseX, mouseY - 3 * polySize);           // Wierzchołek górny (wydłużony)
+                Point point2 = new Point(mouseX + 1.5 * polySize, mouseY - polySize);    // Prawo górny zewnętrzny (szerszy)
+                Point point3 = new Point(mouseX + 2.5 * polySize, mouseY - polySize);// Prawo zewnętrzny (szerszy)
+                Point point4 = new Point(mouseX + polySize, mouseY);              // Prawo dolny wewnętrzny
+                Point point5 = new Point(mouseX + 2 * polySize, mouseY + 2.5 * polySize); // Prawy dolny (szerszy)
+                Point point6 = new Point(mouseX, mouseY + 1.5 * polySize);              // Środek dolny
+                Point point7 = new Point(mouseX - 2 * polySize, mouseY + 2.5 * polySize); // Lewy dolny (szerszy)
+                Point point8 = new Point(mouseX - polySize, mouseY);              // Lewo dolny wewnętrzny
+                Point point9 = new Point(mouseX - 2.5 * polySize, mouseY - polySize);// Lewo zewnętrzny (szerszy)
+                Point point10 = new Point(mouseX - 1.5 * polySize, mouseY - polySize);  // Lewo górny wewnętrzny
 
-                
-                
-    
+                // Dodaj punkty do kolekcji w odpowiedniej kolejności
+                PointCollection polyPoints = new PointCollection
+{
+    point1,
+    point2,
+    point3,
+    point4,
+    point5,
+    point6,
+    point7,
+    point8,
+    point9,
+    point10,
+    point1 // Powrót do początku
+};
 
-                PointCollection polyPoints = new PointCollection();
-
-                polyPoints.Add(point1);
-                polyPoints.Add(point9);
-                polyPoints.Add(point2);
-                polyPoints.Add(point3);
-                polyPoints.Add(point10);
-                polyPoints.Add(point5);
-                polyPoints.Add(point7);
-                polyPoints.Add(point6);
-                polyPoints.Add(point8);
-                polyPoints.Add(point4);
-                polyPoints.Add(point1);
-
-
-
+                // Przypisz punkty do wielokąta
                 poly.Points = polyPoints;
 
+                // Stylizacja
                 Brush brushColor = new SolidColorBrush(Colors.Black);
-
                 poly.Stroke = brushColor;
 
+                // Dodaj wielokąt do obszaru rysowania
                 paintSurface.Children.Add(poly);
-
             }
         }
 
