@@ -35,7 +35,7 @@
                         <MenuItem x:Name="drawRectangle" Header="Rectangle" Click="drawRectangle_Click" />
                         <MenuItem x:Name="drawPolygon" Header="Polygon" Click="drawPolygon_Click" />
                         <MenuItem x:Name="drawTree" Header="Christmas Tree" Click="drawTree_Click" />
-                        <MenuItem x:Name="drawHeart" Header="Heart" Click="drawHeart_Click" />
+                        <MenuItem x:Name="drawPlus" Header="Plus" Click="drawPlus_Click" />
                         <MenuItem x:Name="drawStar" Header="Star" Click="drawStar_Click" />
                     </MenuItem>
                 </Menu>

@@ -212,52 +212,67 @@ namespace GimpSzymonMolitorys
                 ellipse.Stroke = brushColor;
                 paintSurface.Children.Add(ellipse);
             }
-            if (drawStyle == 13)
+            if (drawStyle == 13) //Z internetu gwiazda za pomocą trygonometri
             {
                 Polygon poly = new Polygon();
 
                 double mouseX = e.GetPosition(this).X;
                 double mouseY = e.GetPosition(this).Y;
 
-                double polySize = 30; // Rozmiar gwiazdy
+                double outerRadius = 60; // Promień zewnętrzny
+                double innerRadius = 30; // Promień wewnętrzny
 
-                // Określamy punkty ręcznie
-                Point point1 = new Point(mouseX, mouseY - 3 * polySize);           // Wierzchołek górny (wydłużony)
-                Point point2 = new Point(mouseX + 1.5 * polySize, mouseY - polySize);    // Prawo górny zewnętrzny (szerszy)
-                Point point3 = new Point(mouseX + 2.5 * polySize, mouseY - polySize);// Prawo zewnętrzny (szerszy)
-                Point point4 = new Point(mouseX + polySize, mouseY);              // Prawo dolny wewnętrzny
-                Point point5 = new Point(mouseX + 2 * polySize, mouseY + 2.5 * polySize); // Prawy dolny (szerszy)
-                Point point6 = new Point(mouseX, mouseY + 1.5 * polySize);              // Środek dolny
-                Point point7 = new Point(mouseX - 2 * polySize, mouseY + 2.5 * polySize); // Lewy dolny (szerszy)
-                Point point8 = new Point(mouseX - polySize, mouseY);              // Lewo dolny wewnętrzny
-                Point point9 = new Point(mouseX - 2.5 * polySize, mouseY - polySize);// Lewo zewnętrzny (szerszy)
-                Point point10 = new Point(mouseX - 1.5 * polySize, mouseY - polySize);  // Lewo górny wewnętrzny
+                // Kolekcja punktów gwiazdy
+                PointCollection polyPoints = new PointCollection();
 
-                // Dodaj punkty do kolekcji w odpowiedniej kolejności
-                PointCollection polyPoints = new PointCollection
-{
-    point1,
-    point2,
-    point3,
-    point4,
-    point5,
-    point6,
-    point7,
-    point8,
-    point9,
-    point10,
-    point1 // Powrót do początku
-};
+                // Liczba wierzchołków gwiazdy
+                int numPoints = 10;
 
-                // Przypisz punkty do wielokąta
+                // Obliczanie punktów gwiazdy
+                for (int i = 0; i < numPoints; i++)
+                {
+                    // Kąt dla danego punktu
+                    double angle = i * Math.PI / 5; // 360° / 10 = 36° między punktami
+
+                    // Zmienna promień zależna od pozycji (wewnętrzny/zewnętrzny)
+                    double radius = (i % 2 == 0) ? outerRadius : innerRadius;
+
+                    // Oblicz współrzędne punktu
+                    double x = mouseX + radius * Math.Sin(angle);
+                    double y = mouseY - radius * Math.Cos(angle);
+
+                    polyPoints.Add(new Point(x, y));
+                }
+
+                // Dodanie punktów do wielokąta
                 poly.Points = polyPoints;
 
-                // Stylizacja
+                // Stylizacja wielokąta
                 Brush brushColor = new SolidColorBrush(Colors.Black);
                 poly.Stroke = brushColor;
 
-                // Dodaj wielokąt do obszaru rysowania
+                // Dodanie wielokąta do obszaru rysowania
                 paintSurface.Children.Add(poly);
+
+            }
+            if (drawStyle == 14)
+            {
+
+                Line line = new Line();
+
+                double lineLength = 60;
+                line.Stroke = SystemColors.WindowFrameBrush;
+                //We have to przypisać points to our line
+                line.X1 = currentPoint.X;
+                line.Y1 = currentPoint.Y;
+                //We take our position from mouse (e)
+                line.X2 = e.GetPosition(this).X;
+                line.Y2 = e.GetPosition(this).Y;
+
+                currentPoint = e.GetPosition(this);
+
+                paintSurface.Children.Add(line);
+
             }
         }
 
@@ -281,7 +296,7 @@ namespace GimpSzymonMolitorys
             drawStyle = 13;
         }
 
-        private void drawHeart_Click(object sender, RoutedEventArgs e)
+        private void drawPlus_Click(object sender, RoutedEventArgs e)
         {
             drawStyle = 14;
         }
