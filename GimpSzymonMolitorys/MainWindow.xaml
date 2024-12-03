@@ -20,13 +20,11 @@
                 <Button x:Name="btnPoints" Click="btnPoints_Click">
                     Paint points
                 </Button>
-                <Button x:Name="btnLines" Click="btnLines_Click">
-                    Paint lines
-                </Button>
                 <Menu>
                     <MenuItem Header="Lines">
-                        <MenuItem Header="Paint Lines"/>
+                        <MenuItem Header="Paint Lines" x:Name="btnLines" Click="btnLines_Click"/>
                         <MenuItem Header="Edit Lines"/>
+                        <MenuItem Header="Broken line"/>
                     </MenuItem>
                 </Menu>
                 <Menu>

@@ -476,5 +476,10 @@ namespace GimpSzymonMolitorys
         {
             drawStyle = 17;
         }
+
+        private void brokenLine_Click(object sender, RoutedEventArgs e)
+        {
+            drawStyle = 21;
+        }
     }
 }
