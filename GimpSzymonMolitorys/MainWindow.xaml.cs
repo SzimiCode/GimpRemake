@@ -113,6 +113,7 @@ namespace GimpSzymonMolitorys
 
             if (drawStyle == 3)
             {
+      
                 if (click == true)
                 {
                     // Pierwsze kliknięcie - ustawiamy początkowy punkt
