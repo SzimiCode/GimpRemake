@@ -437,6 +437,48 @@ namespace GimpSzymonMolitorys
                 paintSurface.Children.Add(triangle2);
                 paintSurface.Children.Add(triangle3);
             }
+
+            if(drawStyle == 21)
+            {
+                click = true;
+
+                if (click == true)
+                {
+                    currentPoint = e.GetPosition(this);
+                    click = false;
+
+                    previewLine = new Line
+                    {
+                        Stroke = SystemColors.WindowFrameBrush,
+                        X1 = currentPoint.X,
+                        Y1 = currentPoint.Y,
+                        X2 = currentPoint.X,
+                        Y2 = currentPoint.Y,
+                    };
+                    paintSurface.Children.Add(previewLine);
+
+
+                    this.MouseMove += PreviewLine_MouseMove;
+                }
+                else
+                {
+
+                    if (previewLine != null)
+                    {
+
+                        previewLine.X2 = e.GetPosition(this).X;
+                        previewLine.Y2 = e.GetPosition(this).Y;
+
+
+                        this.MouseMove -= PreviewLine_MouseMove;
+                        previewLine = null;
+                    }
+
+                }
+                
+
+               
+            }
         }
 
         private void drawPolygon_Click(object sender, RoutedEventArgs e)

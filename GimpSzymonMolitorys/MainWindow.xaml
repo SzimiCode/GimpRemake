@@ -24,7 +24,7 @@
                     <MenuItem Header="Lines">
                         <MenuItem Header="Paint Lines" x:Name="btnLines" Click="btnLines_Click"/>
                         <MenuItem Header="Edit Lines"/>
-                        <MenuItem Header="Broken line"/>
+                        <MenuItem x:Name="brokenLine" Header="Broken line" Click="brokenLine_Click"/>
                     </MenuItem>
                 </Menu>
                 <Menu>
