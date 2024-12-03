@@ -37,6 +37,8 @@
                         <MenuItem x:Name="drawTree" Header="Christmas Tree" Click="drawTree_Click" />
                         <MenuItem x:Name="drawPlus" Header="Plus" Click="drawPlus_Click" />
                         <MenuItem x:Name="drawStar" Header="Star" Click="drawStar_Click" />
+                        <MenuItem x:Name="drawArrow" Header="Arrow" Click="drawArrow_Click" />
+                        <MenuItem x:Name="drawTriangle" Header="Triangle" Click="drawTriangle_Click" />
                     </MenuItem>
                 </Menu>
             </ToolBar>

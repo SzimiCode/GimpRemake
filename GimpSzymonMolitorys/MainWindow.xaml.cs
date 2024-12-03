@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -259,19 +260,114 @@ namespace GimpSzymonMolitorys
             {
 
                 Line line = new Line();
+                Line line2 = new Line();
+                Line line3 = new Line();
+                Line line4 = new Line();
 
-                double lineLength = 60;
+                double lineLength = 30;
+
+                double mouseX = e.GetPosition(this).X;
+                double mouseY = e.GetPosition(this).Y;
+
                 line.Stroke = SystemColors.WindowFrameBrush;
+                line2.Stroke = SystemColors.WindowFrameBrush;
+                line3.Stroke = SystemColors.WindowFrameBrush;
+                line4.Stroke = SystemColors.WindowFrameBrush;
                 //We have to przypisać points to our line
-                line.X1 = currentPoint.X;
-                line.Y1 = currentPoint.Y;
+                line.X1 = mouseX+lineLength;
+                line.Y1 = mouseY;
                 //We take our position from mouse (e)
                 line.X2 = e.GetPosition(this).X;
                 line.Y2 = e.GetPosition(this).Y;
 
+                line2.X1 = mouseX;
+                line2.Y1 = mouseY+lineLength;
+
+                line2.X2 = e.GetPosition(this).X;
+                line2.Y2 = e.GetPosition(this).Y;
+
+                line3.X1 = mouseX - lineLength;
+                line3.Y1 = mouseY;
+
+                line3.X2 = e.GetPosition(this).X;
+                line3.Y2 = e.GetPosition(this).Y;
+
+                line4.X1 = mouseX ;
+                line4.Y1 = mouseY - lineLength;
+
+                line4.X2 = e.GetPosition(this).X;
+                line4.Y2 = e.GetPosition(this).Y;
                 currentPoint = e.GetPosition(this);
 
                 paintSurface.Children.Add(line);
+                paintSurface.Children.Add(line2);
+                paintSurface.Children.Add(line3);
+                paintSurface.Children.Add(line4);
+
+            }
+            if (drawStyle == 16)
+            {
+                Rectangle rect = new Rectangle();
+                rect.Width = 25;
+                rect.Height = 60;
+
+                Brush brushColor = new SolidColorBrush(Colors.Black);
+
+                Canvas.SetTop(rect, e.GetPosition(this).Y);
+                Canvas.SetLeft(rect, e.GetPosition(this).X - rect.Width / 2);
+
+                double mouseX = e.GetPosition(this).X;
+                double mouseY = e.GetPosition(this).Y;
+
+                double triangleWidth = 50;
+                double triangleHeight = 50;
+
+
+                Point topPoint = new Point(mouseX, mouseY - triangleHeight);           
+                Point leftPoint = new Point(mouseX - triangleWidth / 2, mouseY);       
+                Point rightPoint = new Point(mouseX + triangleWidth / 2, mouseY);    
+
+                Polygon triangle = new Polygon
+                {
+                    Points = new PointCollection { topPoint, leftPoint, rightPoint },
+                 
+                };
+                triangle.Stroke = brushColor;
+                rect.Stroke = brushColor;
+
+                paintSurface.Children.Add(triangle);
+                paintSurface.Children.Add(rect);
+
+            }
+            if(drawStyle == 17)
+            {
+                double mouseX = e.GetPosition(this).X;
+                double mouseY = e.GetPosition(this).Y;
+
+
+                double triangleWidth = 50;
+                double triangleHeight = 50;
+
+
+                Point topPoint = new Point(mouseX, mouseY - triangleHeight);        
+                Point leftPoint = new Point(mouseX - triangleWidth / 2, mouseY);    
+                Point rightPoint = new Point(mouseX + triangleWidth / 2, mouseY);
+
+                Polygon triangle = new Polygon();
+
+                PointCollection polyPoints = new PointCollection();
+
+                polyPoints.Add(topPoint);
+                polyPoints.Add(leftPoint);
+                polyPoints.Add(rightPoint);
+
+                triangle.Points = polyPoints;
+
+                Brush brushColor = new SolidColorBrush(Colors.Black);
+
+                triangle.Stroke = brushColor;
+
+                paintSurface.Children.Add(triangle);
 
             }
         }
@@ -304,6 +400,14 @@ namespace GimpSzymonMolitorys
         private void drawTree_Click(object sender, RoutedEventArgs e)
         {
             drawStyle = 15;
+        }
+        private void drawArrow_Click(object sender, RoutedEventArgs e)
+        {
+            drawStyle = 16;
+        }
+        private void drawTriangle_Click(object sender, RoutedEventArgs e)
+        {
+            drawStyle = 17;
         }
     }
 }
