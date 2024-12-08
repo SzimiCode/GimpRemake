@@ -524,5 +524,10 @@ namespace GimpSzymonMolitorys
         {
             drawStyle = 21;
         }
+
+        private void editLine_Click(object sender, RoutedEventArgs e)
+        {
+            drawStyle = 22;
+        }
     }
 }
