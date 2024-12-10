@@ -91,7 +91,11 @@ namespace GimpSzymonMolitorys
                 paintSurface.Children.Add(line);
             }
         }
-
+        bool isRightClicked = false;
+        private bool paintSurface_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            return isRightClicked = true;
+        }
         private void paintSurface_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) //Zrobic pozniej switcha
         {
             if (drawStyle == 2)
@@ -441,45 +445,49 @@ namespace GimpSzymonMolitorys
 
             if(drawStyle == 21)
             {
-                click = true;
-
-                if (click == true)
+                if (isRightClicked == false)
                 {
-                    currentPoint = e.GetPosition(this);
-                    click = false;
+                    click = true;
 
-                    previewLine = new Line
+                    if (click == true)
                     {
-                        Stroke = SystemColors.WindowFrameBrush,
-                        X1 = currentPoint.X,
-                        Y1 = currentPoint.Y,
-                        X2 = currentPoint.X,
-                        Y2 = currentPoint.Y,
-                    };
-                    paintSurface.Children.Add(previewLine);
+                        currentPoint = e.GetPosition(this);
+                        click = false;
+
+                        previewLine = new Line
+                        {
+                            Stroke = SystemColors.WindowFrameBrush,
+                            X1 = currentPoint.X,
+                            Y1 = currentPoint.Y,
+                            X2 = currentPoint.X,
+                            Y2 = currentPoint.Y,
+                        };
+                        paintSurface.Children.Add(previewLine);
 
 
-                    this.MouseMove += PreviewLine_MouseMove;
-                }
-                else
-                {
-
-                    if (previewLine != null)
+                        this.MouseMove += PreviewLine_MouseMove;
+                    }
+                    else
                     {
 
-                        previewLine.X2 = e.GetPosition(this).X;
-                        previewLine.Y2 = e.GetPosition(this).Y;
+                        if (previewLine != null)
+                        {
+
+                            previewLine.X2 = e.GetPosition(this).X;
+                            previewLine.Y2 = e.GetPosition(this).Y;
 
 
-                        this.MouseMove -= PreviewLine_MouseMove;
-                        previewLine = null;
+                            this.MouseMove -= PreviewLine_MouseMove;
+                            previewLine = null;
+                        }
+
                     }
 
-                }
-                
 
-               
+
+                }
             }
+                
         }
 
         private void drawPolygon_Click(object sender, RoutedEventArgs e)
