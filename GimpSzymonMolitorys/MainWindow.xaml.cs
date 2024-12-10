@@ -92,9 +92,18 @@ namespace GimpSzymonMolitorys
             }
         }
         bool isRightClicked = false;
-        private bool paintSurface_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        private  void paintSurface_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-            return isRightClicked = true;
+
+            isRightClicked = true;
+
+            if (previewLine != null)
+            {
+                this.MouseMove -= PreviewLine_MouseMove;
+                previewLine = null;
+            }
+
+            click = true;
         }
         private void paintSurface_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) //Zrobic pozniej switcha
         {
@@ -447,6 +456,7 @@ namespace GimpSzymonMolitorys
             {
                 if (isRightClicked == false)
                 {
+                    
                     click = true;
 
                     if (click == true)
@@ -486,6 +496,20 @@ namespace GimpSzymonMolitorys
 
 
                 }
+                else
+                {
+
+                    if (previewLine != null)
+                    {
+                        this.MouseMove -= PreviewLine_MouseMove;
+                        previewLine = null;
+                    }
+
+                    isRightClicked = false;
+                    click = true; 
+                    return;
+                }
+
             }
                 
         }

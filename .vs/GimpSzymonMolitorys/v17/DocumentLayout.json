@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|solutionrelative:gimpszymonmolitorys\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\gimpszymonmolitorys\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|solutionrelative:gimpszymonmolitorys\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\gimpszymonmolitorys\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|solutionrelative:gimpszymonmolitorys\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\gimpszymonmolitorys\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|solutionrelative:gimpszymonmolitorys\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,26 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\App.xaml.cs",
               "RelativeDocumentMoniker": "GimpSzymonMolitorys\\App.xaml.cs",
               "ToolTip": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\App.xaml.cs",
               "RelativeToolTip": "GimpSzymonMolitorys\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:14:15.785Z"
+              "WhenOpened": "2024-11-26T15:14:15.785Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml",
               "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-26T15:11:46.239Z"
+              "WhenOpened": "2024-11-26T15:11:46.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -61,9 +63,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAK4BAAAAAAAAAAAAAMgBAAAuAAAA",
+              "ToolTip": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs*",
+              "ViewState": "AQIAAMEBAAAAAAAAAAAYwPYBAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T15:11:45.998Z",
               "EditorCaption": ""

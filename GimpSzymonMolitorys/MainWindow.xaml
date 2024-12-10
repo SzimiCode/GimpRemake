@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Gism" Height="600" Width="1000">
     <Grid>
-        <Canvas Name="paintSurface" MouseDown="paintSurface_MouseDown" MouseMove="paintSurface_MouseMove" MouseLeftButtonDown="paintSurface_MouseLeftButtonDown">
+        <Canvas Name="paintSurface" MouseDown="paintSurface_MouseDown" MouseMove="paintSurface_MouseMove" MouseLeftButtonDown="paintSurface_MouseLeftButtonDown"  MouseRightButtonDown="paintSurface_MouseRightButtonDown">
             <Canvas.Background>
                 <SolidColorBrush Color="White" Opacity="1"/>
             </Canvas.Background>
