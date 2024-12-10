@@ -94,7 +94,7 @@ namespace GimpSzymonMolitorys
         bool isRightClicked = false;
         private  void paintSurface_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            //We set flag which means stop drawing, then we remove preview of the line and reset variable controlling click
             isRightClicked = true;
 
             if (previewLine != null)
