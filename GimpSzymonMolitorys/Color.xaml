@@ -20,9 +20,9 @@
         <Label Content="H" HorizontalAlignment="Left" Margin="508,103,0,0" VerticalAlignment="Top" FontSize="26"/>
         <Label Content="S" HorizontalAlignment="Left" Margin="583,103,0,0" VerticalAlignment="Top" FontSize="26"/>
         <Label Content="V" HorizontalAlignment="Left" Margin="650,103,0,0" VerticalAlignment="Top" FontSize="26"/>
-        <TextBox x:Name="txtBoxR_Kopiuj" HorizontalAlignment="Left" Margin="500,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
-        <TextBox x:Name="txtBoxR_Kopiuj1" HorizontalAlignment="Left" Margin="573,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
-        <TextBox x:Name="txtBoxR_Kopiuj2" HorizontalAlignment="Left" Margin="641,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxH" HorizontalAlignment="Left" Margin="500,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxS" HorizontalAlignment="Left" Margin="573,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxV" HorizontalAlignment="Left" Margin="641,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
 
     </Grid>
 </Window>

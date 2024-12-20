@@ -31,9 +31,34 @@ namespace GimpSzymonMolitorys
             Rectangle rectWithColor = new Rectangle();
             rectWithColor = rectColor;
 
+            hsvValues(paraR, paraG, paraB);
+
             //currentColor = (paraR, paraG, paraB);
 
             //rectWithColor.Fill(paraR, paraG, paraB);
+        }
+
+        void hsvValues(int rVal, int gVal, int bVal)
+        {
+            float rPrim = rVal / 255;
+            float gPrim = gVal / 255;
+            float bPrim = bVal / 255;
+
+            float mmax = maxValue(rPrim, gPrim, bPrim);
+            float mmin = minValue(rPrim, gPrim, bPrim);
+        }
+
+        float minValue(float rPrim, float gPrim, float bPrim)
+        {
+            float min = Math.Min(rPrim, gPrim);
+            min = Math.Min(min, bPrim);
+            return min;
+        }
+        float maxValue(float rPrim, float gPrim, float bPrim)
+        {
+            float max = Math.Max(rPrim, gPrim);
+            max = Math.Max(max, bPrim);
+            return max;
         }
     }
 }
