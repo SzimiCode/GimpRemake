@@ -22,6 +22,10 @@ namespace GimpSzymonMolitorys
         public Color()
         {
             InitializeComponent();
+
+            int paraR = int.Parse(txtBoxR.Text);
+            int paraG = int.Parse(txtBoxG.Text);
+            int paraB = int.Parse(txtBoxB.Text);
         }
     }
 }
