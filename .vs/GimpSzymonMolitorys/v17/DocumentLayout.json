@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|c:\\users\\szyme\\onedrive\\dokumenty\\wazne\\informatykatutaj\\grafika komputerowa laby\\gimpszymonmolitorys\\gimpszymonmolitorys\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|c:\\users\\lenovo\\documents\\github\\gimpremake\\gimpszymonmolitorys\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|solutionrelative:gimpszymonmolitorys\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\gimpszymonmolitorys\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\gimpszymonmolitorys\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|solutionrelative:gimpszymonmolitorys\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\gimpszymonmolitorys\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\gimpszymonmolitorys\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E162DEA5-4006-42B5-AD83-54FC850FA54B}|GimpSzymonMolitorys\\GimpSzymonMolitorys.csproj|solutionrelative:gimpszymonmolitorys\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -22,50 +22,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\App.xaml.cs",
               "RelativeDocumentMoniker": "GimpSzymonMolitorys\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\App.xaml.cs",
               "RelativeToolTip": "GimpSzymonMolitorys\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:14:15.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T15:14:15.785Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml",
               "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-26T15:11:46.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T15:11:46.239Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\szyme\\OneDrive\\Dokumenty\\Wazne\\InformatykaTutaj\\Grafika Komputerowa Laby\\GimpSzymonMolitorys\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
               "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAgwHEAAAA2AAAA",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwHEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T15:11:45.998Z",
               "EditorCaption": ""

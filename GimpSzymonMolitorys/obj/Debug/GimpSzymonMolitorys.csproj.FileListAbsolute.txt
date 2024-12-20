@@ -28,3 +28,18 @@ C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Lab
 C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.CoreCompileInputs.cache
 C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.exe
 C:\Users\szyme\OneDrive\Dokumenty\Wazne\InformatykaTutaj\Grafika Komputerowa Laby\GimpSzymonMolitorys\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.pdb
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.exe.config
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.exe
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\bin\Debug\GimpSzymonMolitorys.pdb
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\App.g.cs
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys_MarkupCompile.cache
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys_MarkupCompile.lref
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.g.resources
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.Properties.Resources.resources
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.GenerateResource.cache
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.exe
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.pdb
