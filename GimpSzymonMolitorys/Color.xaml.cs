@@ -91,7 +91,7 @@ namespace GimpSzymonMolitorys
                 sValue = delta/ mmax;
             }
 
-            txtBoxH.Text = string(hValue);
+            txtBoxH.Text = ToString(hValue);
             txtBoxS.Text = ToString(sValue);
             txtBoxV.Text = ToString(vValue);
 
@@ -141,6 +141,19 @@ namespace GimpSzymonMolitorys
             {
                 txtBoxG.Text = "0";
                 dataChanger.Content = "Wrong G number";
+            }
+        }
+
+        private void txtBoxB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (valueChecker(paraB))
+            {
+                paraB = int.Parse(txtBoxB.Text);
+            }
+            else
+            {
+                txtBoxB.Text = "0";
+                dataChanger.Content = "Wrong B number";
             }
         }
     }
