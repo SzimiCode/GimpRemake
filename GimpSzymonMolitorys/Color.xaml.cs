@@ -94,9 +94,9 @@ namespace GimpSzymonMolitorys
                 sValue = delta/ mmax;
             }
 
-            txtBoxH.Text = ToString(hValue);
-            txtBoxS.Text = ToString(sValue);
-            txtBoxV.Text = ToString(vValue);
+            txtBoxH.Text = hValue.ToString();
+            txtBoxS.Text = sValue.ToString();
+            txtBoxV.Text = vValue.ToString();
 
 
         }
