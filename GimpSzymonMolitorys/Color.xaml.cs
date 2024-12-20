@@ -31,15 +31,7 @@ namespace GimpSzymonMolitorys
             paraG = int.Parse(txtBoxG.Text);
             paraB = int.Parse(txtBoxB.Text);
 
-            Rectangle rectWithColor = new Rectangle();
-            rectWithColor = rectColor;
-
-           
-
-            Color currentColor = new Color(paraR, paraG, paraB);
-
-            Brush brushColor = new SolidColorBrush(Colors.currentColor);
-            rectWithColor.Stroke = brushColor;
+            changeRectColor();
 
             hsvValues(paraR, paraG, paraB);
 
@@ -48,6 +40,17 @@ namespace GimpSzymonMolitorys
             //rectWithColor.Fill(paraR, paraG, paraB);
         }
 
+        void changeRectColor()
+        {
+            Rectangle rectWithColor = new Rectangle();
+            rectWithColor = rectColor;
+
+            Color currentColor = new Color(paraR, paraG, paraB);
+
+            Brush brushColor = new SolidColorBrush(Colors.currentColor);
+            rectWithColor.Stroke = brushColor;
+
+        }
         void hsvValues(int rVal, int gVal, int bVal)
         {
             float rPrim = rVal / 255;
@@ -123,6 +126,8 @@ namespace GimpSzymonMolitorys
             if (valueChecker(paraR))
             {
                 paraR = int.Parse(txtBoxR.Text);
+                changeRectColor();
+                hsvValues(paraR, paraG, paraB);
             }
             else
             {
@@ -136,6 +141,8 @@ namespace GimpSzymonMolitorys
             if (valueChecker(paraG))
             {
                 paraG = int.Parse(txtBoxG.Text);
+                changeRectColor();
+                hsvValues(paraR, paraG, paraB);
             }
             else
             {
@@ -149,12 +156,19 @@ namespace GimpSzymonMolitorys
             if (valueChecker(paraB))
             {
                 paraB = int.Parse(txtBoxB.Text);
+                changeRectColor();
+                hsvValues(paraR, paraG, paraB);
             }
             else
             {
                 txtBoxB.Text = "0";
                 dataChanger.Content = "Wrong B number";
             }
+        }
+
+        private void Button_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

@@ -39,7 +39,7 @@
                         <MenuItem x:Name="drawTriangle" Header="Triangle" Click="drawTriangle_Click" />
                     </MenuItem>
                 </Menu>
-                <Rectangle Width="30" Height="30" Fill="Green" Name="whichColor">
+                <Rectangle Width="30" Height="30" Fill="Green" x:Name="whichColor">
                     
                 </Rectangle>
             </ToolBar>
