@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace GimpSzymonMolitorys
 {
     /// <summary>
-    /// Logika interakcji dla klasy Test.xaml
+    /// Logika interakcji dla klasy testwind.xaml
     /// </summary>
-    public partial class Test : Window
+    public partial class testwind : Window
     {
-        public Test()
+        public testwind()
         {
             InitializeComponent();
+        }
+
+        internal static Window GetWindow()
+        {
+            throw new NotImplementedException();
         }
     }
 }
