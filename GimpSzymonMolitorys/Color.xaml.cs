@@ -127,6 +127,20 @@ namespace GimpSzymonMolitorys
             else
             {
                 txtBoxR.Text = "0";
+                dataChanger.Content = "Wrong R number";
+            }
+        }
+
+        private void txtBoxG_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (valueChecker(paraG))
+            {
+                paraG = int.Parse(txtBoxG.Text);
+            }
+            else
+            {
+                txtBoxG.Text = "0";
+                dataChanger.Content = "Wrong G number";
             }
         }
     }
