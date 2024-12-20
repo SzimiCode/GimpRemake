@@ -561,5 +561,11 @@ namespace GimpSzymonMolitorys
         {
             drawStyle = 22;
         }
+
+        private void whichColor_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Window colors = new Window();
+            colors.ShowDialog();
+        }
     }
 }

@@ -24,7 +24,7 @@
         <TextBox x:Name="txtBoxS" HorizontalAlignment="Left" Margin="573,175,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
         <TextBox x:Name="txtBoxV" HorizontalAlignment="Left" Margin="641,175,0,0" TextWrapping="Wrap" IsReadOnly="True" Text ="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
         <Label x:Name="dataChanger" Content="Insert Data" HorizontalAlignment="Left" Height="32" Margin="152,375,0,0" VerticalAlignment="Top" Width="185" FontSize="20"/>
-        <Button Content="Save Color" HorizontalAlignment="Left" Height="59" Margin="535,332,0,0" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Button Content="Save Color" HorizontalAlignment="Left" Height="59" Margin="535,332,0,0" VerticalAlignment="Top" Width="120" FontSize="20" MouseLeftButtonDown="Button_MouseLeftButtonDown"/>
 
     </Grid>
 </Window>

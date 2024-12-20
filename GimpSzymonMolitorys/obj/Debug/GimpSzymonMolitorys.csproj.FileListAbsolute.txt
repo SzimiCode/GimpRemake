@@ -43,3 +43,5 @@ C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSz
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.exe
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.pdb
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\Color.g.cs
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\Color.baml

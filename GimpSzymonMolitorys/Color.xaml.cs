@@ -45,9 +45,10 @@ namespace GimpSzymonMolitorys
             Rectangle rectWithColor = new Rectangle();
             rectWithColor = rectColor;
 
-            Color currentColor = new Color(paraR, paraG, paraB);
+            //Color currentColor = new Color(paraR, paraG, paraB);
 
-            Brush brushColor = new SolidColorBrush(Colors.currentColor);
+           // Brush brushColor = new SolidColorBrush(Colors.currentColor);
+            Brush brushColor = new SolidColorBrush(Colors.Green);
             rectWithColor.Stroke = brushColor;
 
         }
