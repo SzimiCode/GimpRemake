@@ -46,6 +46,8 @@ namespace GimpSzymonMolitorys
 
             float mmax = maxValue(rPrim, gPrim, bPrim);
             float mmin = minValue(rPrim, gPrim, bPrim);
+
+            float delta = mmax - mmin;
         }
 
         float minValue(float rPrim, float gPrim, float bPrim)
