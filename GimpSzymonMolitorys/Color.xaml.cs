@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -26,6 +27,13 @@ namespace GimpSzymonMolitorys
             int paraR = int.Parse(txtBoxR.Text);
             int paraG = int.Parse(txtBoxG.Text);
             int paraB = int.Parse(txtBoxB.Text);
+
+            Rectangle rectWithColor = new Rectangle();
+            rectWithColor = rectColor;
+
+            //currentColor = (paraR, paraG, paraB);
+
+            //rectWithColor.Fill(paraR, paraG, paraB);
         }
     }
 }
