@@ -9,7 +9,7 @@
     <Grid>
 
         <Label Content="R" HorizontalAlignment="Left" Margin="134,103,0,0" VerticalAlignment="Top" FontSize="26"/>
-        <TextBox x:Name="txtBoxR" HorizontalAlignment="Left" Margin="125,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxR" HorizontalAlignment="Left" Margin="125,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center" TextChanged="txtBoxR_TextChanged"/>
         <Label Content="G" HorizontalAlignment="Left" Margin="206,103,0,0" VerticalAlignment="Top" FontSize="26"/>
         <Label Content="B" HorizontalAlignment="Left" Margin="285,103,0,0" VerticalAlignment="Top" FontSize="26"/>
         <TextBox x:Name="txtBoxG" HorizontalAlignment="Left" Margin="198,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
@@ -23,6 +23,7 @@
         <TextBox x:Name="txtBoxH" HorizontalAlignment="Left" Margin="500,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
         <TextBox x:Name="txtBoxS" HorizontalAlignment="Left" Margin="573,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
         <TextBox x:Name="txtBoxV" HorizontalAlignment="Left" Margin="641,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
+        <Label Content="Insert Data" HorizontalAlignment="Left" Height="32" Margin="125,376,0,0" VerticalAlignment="Top" Width="185" FontSize="20"/>
 
     </Grid>
 </Window>

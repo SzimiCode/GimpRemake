@@ -20,16 +20,21 @@ namespace GimpSzymonMolitorys
     /// </summary>
     public partial class Color : Window
     {
+        int paraR = 0;
+        int paraG = 0;
+        int paraB = 0;
         public Color()
         {
             InitializeComponent();
 
-            int paraR = int.Parse(txtBoxR.Text);
-            int paraG = int.Parse(txtBoxG.Text);
-            int paraB = int.Parse(txtBoxB.Text);
+            paraR = int.Parse(txtBoxR.Text);
+            paraG = int.Parse(txtBoxG.Text);
+            paraB = int.Parse(txtBoxB.Text);
 
             Rectangle rectWithColor = new Rectangle();
             rectWithColor = rectColor;
+
+           
 
             Color currentColor = new Color(paraR, paraG, paraB);
 
@@ -87,12 +92,13 @@ namespace GimpSzymonMolitorys
             }
 
             txtBoxH.Text = string(hValue);
-            txtBoxS.Text = string(sValue);
-            txtBoxV.Text = string(vValue);
+            txtBoxS.Text = ToString(sValue);
+            txtBoxV.Text = ToString(vValue);
+
 
         }
 
-    
+
         float minValue(float rPrim, float gPrim, float bPrim)
         {
             float min = Math.Min(rPrim, gPrim);
@@ -104,6 +110,24 @@ namespace GimpSzymonMolitorys
             float max = Math.Max(rPrim, gPrim);
             max = Math.Max(max, bPrim);
             return max;
+        }
+
+        bool valueChecker(int a)
+        {
+            if (a < 256 || a > 0) return true;
+            return false;
+        }
+
+        private void txtBoxR_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (valueChecker(paraR))
+            {
+                paraR = int.Parse(txtBoxR.Text);
+            }
+            else
+            {
+                txtBoxR.Text = "0";
+            }
         }
     }
 }
