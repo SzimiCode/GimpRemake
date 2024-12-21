@@ -40,17 +40,15 @@ namespace GimpSzymonMolitorys
             //rectWithColor.Fill(paraR, paraG, paraB);
         }
 
-        void changeRectColor()
+        void ChangeRectColor(Rectangle rectWithColor, byte paraR, byte paraG, byte paraB)
         {
-            Rectangle rectWithColor = new Rectangle();
-            rectWithColor = rectColor;
+     
+            System.Windows.Media.Color currentColor = System.Windows.Media.Color.FromRgb(paraR, paraG, paraB);
 
-            //Color currentColor = new Color(paraR, paraG, paraB);
+   
+            Brush brushColor = new SolidColorBrush(currentColor);
 
-           // Brush brushColor = new SolidColorBrush(Colors.currentColor);
-            Brush brushColor = new SolidColorBrush(Colors.Green);
-            rectWithColor.Stroke = brushColor;
-
+            rectWithColor.Fill = brushColor;
         }
         void hsvValues(int rVal, int gVal, int bVal)
         {
@@ -94,11 +92,11 @@ namespace GimpSzymonMolitorys
             {
                 sValue = delta/ mmax;
             }
-
+            
             txtBoxH.Text = hValue.ToString();
             txtBoxS.Text = sValue.ToString();
             txtBoxV.Text = vValue.ToString();
-
+            
 
         }
 

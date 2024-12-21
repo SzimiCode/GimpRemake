@@ -564,11 +564,13 @@ namespace GimpSzymonMolitorys
 
         private void whichColor_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            
-            Window window = testwind.GetWindow();
-            MainWindow.GetFlowDirection(window);
 
-            
+            Color colorwind = new Color();
+            colorwind.ShowDialog();
+
+
+
+
         }
     }
 }
