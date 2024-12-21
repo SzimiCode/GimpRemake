@@ -42,10 +42,8 @@ namespace GimpSzymonMolitorys
 
         void ChangeRectColor(Rectangle rectWithColor, byte paraR, byte paraG, byte paraB)
         {
-     
             System.Windows.Media.Color currentColor = System.Windows.Media.Color.FromRgb(paraR, paraG, paraB);
 
-   
             Brush brushColor = new SolidColorBrush(currentColor);
 
             rectWithColor.Fill = brushColor;
