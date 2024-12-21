@@ -1,169 +1,130 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Effects;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace GimpSzymonMolitorys
 {
-    /// <summary>
-    /// Logika interakcji dla klasy Color.xaml
-    /// </summary>
     public partial class Color : Window
     {
         int paraR = 0;
         int paraG = 0;
         int paraB = 0;
+
         public Color()
         {
             InitializeComponent();
+            MessageBox.Show("InitializeComponent completed.");
+            Loaded += Color_Loaded;
+            // Inicjalizacja koloru prostokąta
+           // changeRectColor();
 
-            paraR = int.Parse(txtBoxR.Text);
-            paraG = int.Parse(txtBoxG.Text);
-            paraB = int.Parse(txtBoxB.Text);
+            // Obliczenie wartości HSV dla początkowego koloru
+           // hsvValues(paraR, paraG, paraB);
 
-            changeRectColor();
-
-            hsvValues(paraR, paraG, paraB);
-
-            //currentColor = (paraR, paraG, paraB);
-
-            //rectWithColor.Fill(paraR, paraG, paraB);
+            
         }
-
-        void ChangeRectColor(Rectangle rectWithColor, byte paraR, byte paraG, byte paraB)
+        private void Color_Loaded(object sender, RoutedEventArgs e)
         {
-            System.Windows.Media.Color currentColor = System.Windows.Media.Color.FromRgb(paraR, paraG, paraB);
-
-            Brush brushColor = new SolidColorBrush(currentColor);
-
-            rectWithColor.Fill = brushColor;
-        }
-        void hsvValues(int rVal, int gVal, int bVal)
-        {
-            float rPrim = rVal / 255;
-            float gPrim = gVal / 255;
-            float bPrim = bVal / 255;
-
-            float mmax = maxValue(rPrim, gPrim, bPrim);
-            float mmin = minValue(rPrim, gPrim, bPrim);
-
-            float delta = mmax - mmin;
-
-            float vValue = mmax;
-
-            float sValue = 0;
-
-            float hValue = 0;
-
-            if (delta == 0)
+            // Sprawdzanie czy rectColor jest poprawnie zainicjowane
+            if (rectColor == null)
             {
-                hValue = 0;
-            }
-            else if(mmax == rPrim)
-            {
-                hValue = 60 * (((gPrim - bPrim)/delta)%6);
-            }
-            else if(mmax == gPrim)
-            {
-                hValue = 60 * ((bPrim - rPrim) / delta + 2);
-            }
-            else if(mmax == bPrim)
-            {
-                hValue = 60 * ((rPrim - gPrim) / delta + 4);
-            }
-
-            if (mmax == 0)
-            {
-                sValue = 0;
+                MessageBox.Show("Rectangle rectColor is null right after Loaded.");
             }
             else
             {
-                sValue = delta/ mmax;
+                MessageBox.Show("Rectangle rectColor initialized correctly.");
             }
-            
-            txtBoxH.Text = hValue.ToString();
-            txtBoxS.Text = sValue.ToString();
-            txtBoxV.Text = vValue.ToString();
-            
+        }
+        void changeRectColor()
+        {
+          
+            try
+            {
+                // Tworzenie koloru z parametrów RGB
+                System.Windows.Media.Color currentColor = System.Windows.Media.Color.FromRgb((byte)paraR, (byte)paraG, (byte)paraB);
 
+
+                // Aktualizacja wypełnienia prostokąta
+                rectColor.Fill = new SolidColorBrush(currentColor);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Błąd podczas zmiany koloru: {ex.Message}");
+            }
         }
 
+        void hsvValues(int rVal, int gVal, int bVal)
+        {
+            float rPrim = rVal / 255f;
+            float gPrim = gVal / 255f;
+            float bPrim = bVal / 255f;
 
-        float minValue(float rPrim, float gPrim, float bPrim)
-        {
-            float min = Math.Min(rPrim, gPrim);
-            min = Math.Min(min, bPrim);
-            return min;
-        }
-        float maxValue(float rPrim, float gPrim, float bPrim)
-        {
-            float max = Math.Max(rPrim, gPrim);
-            max = Math.Max(max, bPrim);
-            return max;
+            float mmax = Math.Max(rPrim, Math.Max(gPrim, bPrim));
+            float mmin = Math.Min(rPrim, Math.Min(gPrim, bPrim));
+            float delta = mmax - mmin;
+
+            // Obliczanie HSV
+            float hValue = 0;
+            if (delta != 0)
+            {
+                if (mmax == rPrim) hValue = 60 * (((gPrim - bPrim) / delta) % 6);
+                else if (mmax == gPrim) hValue = 60 * ((bPrim - rPrim) / delta + 2);
+                else if (mmax == bPrim) hValue = 60 * ((rPrim - gPrim) / delta + 4);
+            }
+
+            float sValue = (mmax == 0) ? 0 : delta / mmax;
+            float vValue = mmax;
+
+            // Aktualizacja pól tekstowych
+            txtBoxH.Text = hValue.ToString("F2");
+            txtBoxS.Text = sValue.ToString("F2");
+            txtBoxV.Text = vValue.ToString("F2");
         }
 
-        bool valueChecker(int a)
+        bool isValidValue(string input, out int value)
         {
-            if (a < 256 || a > 0) return true;
+            // Sprawdzanie poprawności wartości (zakres 0-255)
+            if (int.TryParse(input, out value) && value >= 0 && value <= 255)
+            {
+                return true;
+            }
+            value = 0;
             return false;
+        }
+
+        void handleTextChanged(TextBox textBox, ref int parameter)
+        {
+            if (isValidValue(textBox.Text, out int newValue))
+            {
+                parameter = newValue;
+                changeRectColor();
+                hsvValues(paraR, paraG, paraB);
+                dataChanger.Content = ""; // Resetowanie komunikatu o błędzie
+            }
+            else
+            {
+                textBox.Text = "0";
+                dataChanger.Content = $"Nieprawidłowa wartość dla {textBox.Name}.";
+            }
         }
 
         private void txtBoxR_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (valueChecker(paraR))
-            {
-                paraR = int.Parse(txtBoxR.Text);
-                changeRectColor();
-                hsvValues(paraR, paraG, paraB);
-            }
-            else
-            {
-                txtBoxR.Text = "0";
-                dataChanger.Content = "Wrong R number";
-            }
+            handleTextChanged((TextBox)sender, ref paraR);
         }
 
         private void txtBoxG_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (valueChecker(paraG))
-            {
-                paraG = int.Parse(txtBoxG.Text);
-                changeRectColor();
-                hsvValues(paraR, paraG, paraB);
-            }
-            else
-            {
-                txtBoxG.Text = "0";
-                dataChanger.Content = "Wrong G number";
-            }
+            handleTextChanged((TextBox)sender, ref paraG);
         }
 
         private void txtBoxB_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (valueChecker(paraB))
-            {
-                paraB = int.Parse(txtBoxB.Text);
-                changeRectColor();
-                hsvValues(paraR, paraG, paraB);
-            }
-            else
-            {
-                txtBoxB.Text = "0";
-                dataChanger.Content = "Wrong B number";
-            }
+            handleTextChanged((TextBox)sender, ref paraB);
         }
 
-        private void Button_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void Button_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
 
         }
