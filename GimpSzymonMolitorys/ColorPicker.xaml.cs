@@ -61,9 +61,12 @@ namespace GimpSzymonMolitorys
             float sValue = (mmax == 0) ? 0 : delta / mmax;
             float vValue = mmax;
 
-            //txtBoxH.Text = hValue.ToString("F2");
-            //txtBoxS.Text = sValue.ToString("F2");
-            //txtBoxV.Text = vValue.ToString("F2");
+            if(txtBoxV!=null && txtBoxH!=null && txtBoxS!=null){
+                txtBoxH.Text = hValue.ToString("F2");
+                txtBoxS.Text = sValue.ToString("F2");
+                txtBoxV.Text = vValue.ToString("F2");
+            }
+            
         }
 
         private bool isValidValue(string input, out int value)
