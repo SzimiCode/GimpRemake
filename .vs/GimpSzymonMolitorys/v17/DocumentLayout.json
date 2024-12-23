@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -43,6 +43,18 @@
               "ViewState": "AgIAACwAAAAAAAAAAAAUwEAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T10:41:00.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColorPicker.xaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\ColorPicker.xaml",
+              "RelativeDocumentMoniker": "GimpSzymonMolitorys\\ColorPicker.xaml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\ColorPicker.xaml*",
+              "RelativeToolTip": "GimpSzymonMolitorys\\ColorPicker.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-23T11:14:03.488Z",
               "EditorCaption": ""
             },
             {
@@ -80,39 +92,6 @@
               "RelativeToolTip": "GimpSzymonMolitorys\\testwind.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-20T20:28:10.264Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "9931fac1-6820-4477-b01c-485cc3d94e68",
-        "Display": 0,
-        "X": 32,
-        "Y": 72,
-        "Width": 1142,
-        "Height": 566,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ColorPicker.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\ColorPicker.xaml",
-              "RelativeDocumentMoniker": "GimpSzymonMolitorys\\ColorPicker.xaml",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\ColorPicker.xaml*",
-              "RelativeToolTip": "GimpSzymonMolitorys\\ColorPicker.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-21T09:12:36.093Z",
-              "EditorCaption": ""
             }
           ]
         }
