@@ -93,6 +93,8 @@ namespace GimpSzymonMolitorys
             {
                 textBox.Text = "";
                 if(textBox.Name== "txtBoxR") dataChanger.Content = $"Wrong value for R.";
+                else if (textBox.Name == "txtBoxG") dataChanger.Content = $"Wrong value for G.";
+                else if (textBox.Name == "txtBoxB") dataChanger.Content = $"Wrong value for B.";
             }
         }
 
