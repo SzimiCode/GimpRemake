@@ -127,7 +127,7 @@ namespace GimpSzymonMolitorys
                 //we give ellipse to possition of our mouse
                 Canvas.SetTop(ellipse, e.GetPosition(this).Y - ellipse.Height/2);
                 Canvas.SetLeft(ellipse, e.GetPosition(this).X - ellipse.Width/2);
-                ellipse.Fill = SystemColors.WindowFrameBrush;
+                ellipse.Fill = currentBrush;
                 paintSurface.Children.Add(ellipse);
 
                 //We move by half of the height, to set at exact spot of mouse that,s why - 
@@ -146,7 +146,7 @@ namespace GimpSzymonMolitorys
                     // Tworzymy tymczasową linię do podglądu
                     previewLine = new Line
                     {
-                        Stroke = SystemColors.WindowFrameBrush,
+                        Stroke = currentBrush,
                         X1 = currentPoint.X,
                         Y1 = currentPoint.Y,
                         X2 = currentPoint.X, // Tymczasowo, zaktualizowane w MouseMove
@@ -184,7 +184,7 @@ namespace GimpSzymonMolitorys
                 Canvas.SetTop(rect, e.GetPosition(this).Y - rect.Height / 2);
                 Canvas.SetLeft(rect, e.GetPosition(this).X - rect.Width / 2);
 
-                Brush brushColor = new SolidColorBrush(Colors.Black);
+                Brush brushColor = currentBrush;
 
                 rect.Stroke = brushColor;
 
@@ -219,7 +219,7 @@ namespace GimpSzymonMolitorys
 
                 poly.Points = polyPoints;
 
-                Brush brushColor = new SolidColorBrush(Colors.Black);
+                Brush brushColor = currentBrush;
 
                 poly.Stroke = brushColor;
 
@@ -233,7 +233,7 @@ namespace GimpSzymonMolitorys
                 ellipse.Height = 60;
                 Canvas.SetTop(ellipse, e.GetPosition(this).Y - ellipse.Height / 2);
                 Canvas.SetLeft(ellipse, e.GetPosition(this).X - ellipse.Width / 2);
-                Brush brushColor = new SolidColorBrush(Colors.Black);
+                Brush brushColor = currentBrush;
                 ellipse.Stroke = brushColor;
                 paintSurface.Children.Add(ellipse);
             }
@@ -273,7 +273,7 @@ namespace GimpSzymonMolitorys
                 poly.Points = polyPoints;
 
                 // Stylizacja wielokąta
-                Brush brushColor = new SolidColorBrush(Colors.Black);
+                Brush brushColor = currentBrush;
                 poly.Stroke = brushColor;
 
                 // Dodanie wielokąta do obszaru rysowania
@@ -293,10 +293,10 @@ namespace GimpSzymonMolitorys
                 double mouseX = e.GetPosition(this).X;
                 double mouseY = e.GetPosition(this).Y;
 
-                line.Stroke = SystemColors.WindowFrameBrush;
-                line2.Stroke = SystemColors.WindowFrameBrush;
-                line3.Stroke = SystemColors.WindowFrameBrush;
-                line4.Stroke = SystemColors.WindowFrameBrush;
+                line.Stroke = currentBrush;
+                line2.Stroke = currentBrush;
+                line3.Stroke = currentBrush;
+                line4.Stroke = currentBrush;
                 //We have to przypisać points to our line
                 line.X1 = mouseX+lineLength;
                 line.Y1 = mouseY;
@@ -335,7 +335,7 @@ namespace GimpSzymonMolitorys
                 rect.Width = 25;
                 rect.Height = 60;
 
-                Brush brushColor = new SolidColorBrush(Colors.Black);
+                Brush brushColor = currentBrush;
 
                 Canvas.SetTop(rect, e.GetPosition(this).Y);
                 Canvas.SetLeft(rect, e.GetPosition(this).X - rect.Width / 2);
@@ -387,7 +387,7 @@ namespace GimpSzymonMolitorys
 
                 triangle.Points = polyPoints;
 
-                Brush brushColor = new SolidColorBrush(Colors.Black);
+                Brush brushColor = currentBrush;
 
                 triangle.Stroke = brushColor;
 
@@ -400,7 +400,7 @@ namespace GimpSzymonMolitorys
                 rect.Width = 20;
                 rect.Height = 30;
 
-                Brush brushColor = new SolidColorBrush(Colors.Black);
+                Brush brushColor = currentBrush;
 
                 Canvas.SetTop(rect, e.GetPosition(this).Y);
                 Canvas.SetLeft(rect, e.GetPosition(this).X - rect.Width / 2);
@@ -476,7 +476,7 @@ namespace GimpSzymonMolitorys
 
                         previewLine = new Line
                         {
-                            Stroke = SystemColors.WindowFrameBrush,
+                            Stroke = currentBrush,
                             X1 = currentPoint.X,
                             Y1 = currentPoint.Y,
                             X2 = currentPoint.X,
