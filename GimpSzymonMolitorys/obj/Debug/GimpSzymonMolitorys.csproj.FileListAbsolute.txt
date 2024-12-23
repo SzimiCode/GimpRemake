@@ -43,7 +43,7 @@ C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSz
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.exe
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\GimpSzymonMolitorys.pdb
-C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\Color.g.cs
-C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\Color.baml
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\testwind.g.cs
 C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\testwind.baml
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\ColorPicker.g.cs
+C:\Users\Lenovo\Documents\GitHub\GimpRemake\GimpSzymonMolitorys\obj\Debug\ColorPicker.baml

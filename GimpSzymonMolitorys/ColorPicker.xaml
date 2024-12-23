@@ -8,12 +8,12 @@
         Title="ColorPicker" Height="450" Width="800">
     <Grid>
         <Label Content="R" HorizontalAlignment="Left" Margin="134,103,0,0" VerticalAlignment="Top" FontSize="26"/>
-        <TextBox x:Name="txtBoxR" HorizontalAlignment="Left" Margin="125,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center" TextChanged="txtBoxR_TextChanged"/>
+        <TextBox x:Name="txtBoxR" HorizontalAlignment="Left" Margin="114,154,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="66" Height="42" FontSize="28" TextAlignment="Center" TextChanged="txtBoxR_TextChanged"/>
         <Label Content="G" HorizontalAlignment="Left" Margin="206,103,0,0" VerticalAlignment="Top" FontSize="26"/>
         <Label Content="B" HorizontalAlignment="Left" Margin="285,103,0,0" VerticalAlignment="Top" FontSize="26"/>
-        <TextBox x:Name="txtBoxG" HorizontalAlignment="Left" Margin="198,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center" TextChanged="txtBoxG_TextChanged"/>
-        <TextBox x:Name="txtBoxB" HorizontalAlignment="Left" Margin="275,175,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center" TextChanged="txtBoxB_TextChanged"/>
-        <Rectangle x:Name="rectColor" HorizontalAlignment="Left" Height="100" Margin="170,251,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Fill="Azure"/>
+        <TextBox x:Name="txtBoxG" HorizontalAlignment="Left" Margin="187,154,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="66" Height="42" FontSize="28" TextAlignment="Center" TextChanged="txtBoxG_TextChanged"/>
+        <TextBox x:Name="txtBoxB" HorizontalAlignment="Left" Margin="264,154,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="66" Height="42" FontSize="28" TextAlignment="Center" TextChanged="txtBoxB_TextChanged"/>
+        <Rectangle x:Name="rectColor" HorizontalAlignment="Left" Height="100" Margin="170,251,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Fill="Black"/>
         <Label Content="HSV Value" HorizontalAlignment="Left" Margin="533,47,0,0" VerticalAlignment="Top" FontSize="28"/>
         <Label Content="RGB Value" HorizontalAlignment="Left" Margin="152,56,0,0" VerticalAlignment="Top" FontSize="28"/>
         <Label Content="H" HorizontalAlignment="Left" Margin="508,103,0,0" VerticalAlignment="Top" FontSize="26"/>
@@ -22,7 +22,7 @@
         <TextBox x:Name="txtBoxH" HorizontalAlignment="Left" Margin="500,175,0,0" TextWrapping="Wrap" IsReadOnly="True"  Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
         <TextBox x:Name="txtBoxS" HorizontalAlignment="Left" Margin="573,175,0,0" TextWrapping="Wrap"  IsReadOnly="True" Text="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
         <TextBox x:Name="txtBoxV" HorizontalAlignment="Left" Margin="641,175,0,0" TextWrapping="Wrap" IsReadOnly="True" Text ="0" VerticalAlignment="Top" Width="44" Height="42" FontSize="28" TextAlignment="Center"/>
-        <Label x:Name="dataChanger" Content="Insert Data" HorizontalAlignment="Left" Height="32" Margin="152,375,0,0" VerticalAlignment="Top" Width="185" FontSize="20"/>
+        <Label x:Name="dataChanger" Content="Insert Data" HorizontalAlignment="Left" Height="32" Margin="49,375,0,0" VerticalAlignment="Top" Width="375" FontSize="20"/>
         <Button Content="Save Color" HorizontalAlignment="Left" Height="59" Margin="535,332,0,0" VerticalAlignment="Top" Width="120" FontSize="20" MouseLeftButtonDown="Button_MouseLeftButtonDown"/>
     </Grid>
 </Window>
