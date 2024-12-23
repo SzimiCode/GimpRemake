@@ -115,7 +115,7 @@ namespace GimpSzymonMolitorys
 
         private void Button_SaveColor_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"Kolor zapisany: RGB({paraR}, {paraG}, {paraB})");
+            MessageBox.Show($"Color saved: RGB({paraR}, {paraG}, {paraB})");
         }
 
         private void Button_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
