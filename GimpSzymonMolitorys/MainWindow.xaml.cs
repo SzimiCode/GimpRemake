@@ -42,6 +42,7 @@ namespace GimpSzymonMolitorys
         public void SetColor(Color color)
         {
             currentBrush = new SolidColorBrush(color);
+            whichColor.Fill = currentBrush; 
         }
 
         //pomocniczna funkcja do rysowania linii
