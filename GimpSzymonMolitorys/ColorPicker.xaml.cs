@@ -123,7 +123,11 @@ namespace GimpSzymonMolitorys
 
         private void Button_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             Color selectedColor = Color.FromRgb((byte)paraR, (byte)paraG, (byte)paraB);
             ((MainWindow)Application.Current.MainWindow).SetColor(selectedColor);
             this.Close();

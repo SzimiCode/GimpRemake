@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -87,7 +88,7 @@ namespace GimpSzymonMolitorys
             {
                 Line line = new Line();
 
-                line.Stroke = SystemColors.WindowFrameBrush;
+                line.Stroke = currentBrush;
                 //We have to przypisać points to our line
                 line.X1 = currentPoint.X;
                 line.Y1 = currentPoint.Y;
