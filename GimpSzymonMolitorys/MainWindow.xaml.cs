@@ -19,6 +19,8 @@ namespace GimpSzymonMolitorys
     /// <summary>
     /// Logika interakcji dla klasy MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
         //Current Point where we click our mouse 
@@ -28,10 +30,17 @@ namespace GimpSzymonMolitorys
         //Variable to choose which style of drawing we will choose
         int drawStyle = 1;
         private bool click;
+        private Brush currentBrush = Brushes.Black;
 
         public MainWindow()
         {
             InitializeComponent();
+            
+
+        }
+        public void SetColor(Color color)
+        {
+            currentBrush = new SolidColorBrush(color);
         }
 
         //pomocniczna funkcja do rysowania linii
