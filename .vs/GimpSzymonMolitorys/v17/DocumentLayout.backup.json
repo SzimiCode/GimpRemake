@@ -30,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAGgCAAAAAAAAAAAgwHkCAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:11:45.998Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -55,19 +68,6 @@
               "RelativeToolTip": "GimpSzymonMolitorys\\ColorPicker.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-23T11:14:03.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAHACAAAAAAAAAAAIwHoCAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:11:45.998Z",
               "EditorCaption": ""
             },
             {
