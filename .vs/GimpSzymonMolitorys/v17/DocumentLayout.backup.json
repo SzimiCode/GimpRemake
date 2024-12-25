@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -59,6 +59,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHACAAAAAAAAAAAIwHoCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:11:45.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml",
@@ -67,19 +80,6 @@
               "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-26T15:11:46.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAJ8BAAAAAAAAAAAEwK4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:11:45.998Z",
               "EditorCaption": ""
             },
             {

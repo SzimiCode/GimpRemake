@@ -631,7 +631,13 @@ namespace GimpSzymonMolitorys
 
         private void OnApplySobelFilterClick(object sender, RoutedEventArgs e)
         {
+            Image<Bgr, byte> img = new Image<Bgr, byte>("C:\\Users\\Lenovo\\Pictures\\Screenshots\\Zrzut ekranu 2024-12-18 194139.png");
+            Image<Gray, byte> img2 = img.Convert<Gray, byte>();
+            Image<Gray, Single> img_final = (img2.Sobel(1, 0, 5));
 
+            CvInvoke.Imshow("Image", img_final);
+            CvInvoke.Imshow("Image2", img2);
+            CvInvoke.WaitKey(0);
         }
     }
 }
