@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace GimpSzymonMolitorys
 {
@@ -589,7 +590,41 @@ namespace GimpSzymonMolitorys
 
         private void OnAddImageClick(object sender, RoutedEventArgs e)
         {
+            //  Open window with choosing files
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "(*.jpg;*.png)|*.jpg;*.png|(*.*)|*.*"
+            };
 
+            if (openFileDialog.ShowDialog() == true)
+            {
+                try
+                {
+                    // Ścieżka do wybranego pliku
+                    string filePath = openFileDialog.FileName;
+
+                    // 3. Utwórz obiekt BitmapImage
+                    BitmapImage bitmap = new BitmapImage(new Uri(filePath));
+
+                    // 4. Utwórz kontrolkę Image
+                    Image imageControl = new Image
+                    {
+                        Source = bitmap,
+                        Width = 200, // Przykładowa szerokość
+                        Height = 200 // Przykładowa wysokość
+                    };
+
+                    // 5. Dodaj obraz na Canvas
+                    Canvas.SetLeft(imageControl, 50); // Pozycja X
+                    Canvas.SetTop(imageControl, 50);  // Pozycja Y
+                    paintSurface.Children.Add(imageControl);
+                }
+                catch (Exception ex)
+                {
+                    // Obsłuż błędy wczytywania pliku
+                    MessageBox.Show($"Błąd podczas wczytywania obrazu: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
         }
     }
 }
