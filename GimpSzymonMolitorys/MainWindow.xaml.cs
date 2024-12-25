@@ -581,5 +581,15 @@ namespace GimpSzymonMolitorys
             ColorPicker colorpicker = new ColorPicker();
             colorpicker.ShowDialog();
         }
+
+        private void paintSurface_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void OnAddImageClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
