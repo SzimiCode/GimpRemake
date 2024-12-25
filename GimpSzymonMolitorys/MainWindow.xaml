@@ -42,7 +42,7 @@
                 <Rectangle Width="30" Height="30" Fill="Black" x:Name="whichColor" MouseLeftButtonDown="whichColor_MouseLeftButtonDown">
                     
                 </Rectangle>
-                <Button Content="Add Image" Width="120" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10"
+                <Button Content="Add Image" Width="100" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" 
                 Click="OnAddImageClick"/>
             </ToolBar>
         </ToolBarPanel>
