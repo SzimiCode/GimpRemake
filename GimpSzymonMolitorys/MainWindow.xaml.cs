@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using Emgu.CV;
+using Emgu.CV.Structure;
 
 namespace GimpSzymonMolitorys
 {
@@ -123,7 +125,7 @@ namespace GimpSzymonMolitorys
             if (drawStyle == 2)
             {
                 // We created ellipse object to immitate point
-                Ellipse ellipse = new Ellipse();
+                System.Windows.Shapes.Ellipse ellipse = new System.Windows.Shapes.Ellipse();
                 //We set height and width of our point
                 ellipse.Width = 6;
                 ellipse.Height = 6;
@@ -211,7 +213,7 @@ namespace GimpSzymonMolitorys
                 Point point5 = new Point(mouseX - polySize, mouseY - 2 * polySize);
                 Point point6 = new Point(mouseX - 2*polySize, mouseY);
 
-                PointCollection polyPoints = new PointCollection();
+                System.Windows.Media.PointCollection polyPoints = new System.Windows.Media.PointCollection();
 
                 polyPoints.Add(point1);
                 polyPoints.Add(point2);
@@ -231,7 +233,7 @@ namespace GimpSzymonMolitorys
             }
             if (drawStyle == 12)
             {
-                Ellipse ellipse = new Ellipse();
+                System.Windows.Shapes.Ellipse ellipse = new System.Windows.Shapes.Ellipse();
                 ellipse.Width = 60;
                 ellipse.Height = 60;
                 Canvas.SetTop(ellipse, e.GetPosition(this).Y - ellipse.Height / 2);
@@ -251,7 +253,7 @@ namespace GimpSzymonMolitorys
                 double innerRadius = 30; // Promień wewnętrzny
 
                 // Kolekcja punktów gwiazdy
-                PointCollection polyPoints = new PointCollection();
+                System.Windows.Media.PointCollection polyPoints = new System.Windows.Media.PointCollection();
 
                 // Liczba wierzchołków gwiazdy
                 int numPoints = 10;
@@ -356,7 +358,7 @@ namespace GimpSzymonMolitorys
 
                 Polygon triangle = new Polygon
                 {
-                    Points = new PointCollection { topPoint, leftPoint, rightPoint },
+                    Points = new System.Windows.Media.PointCollection { topPoint, leftPoint, rightPoint },
                  
                 };
                 triangle.Stroke = brushColor;
@@ -382,7 +384,7 @@ namespace GimpSzymonMolitorys
 
                 Polygon triangle = new Polygon();
 
-                PointCollection polyPoints = new PointCollection();
+                System.Windows.Media.PointCollection polyPoints = new System.Windows.Media.PointCollection();
 
                 polyPoints.Add(topPoint);
                 polyPoints.Add(leftPoint);
@@ -421,7 +423,7 @@ namespace GimpSzymonMolitorys
 
                 Polygon triangle = new Polygon
                 {
-                    Points = new PointCollection { topPoint, leftPoint, rightPoint },
+                    Points = new System.Windows.Media.PointCollection { topPoint, leftPoint, rightPoint },
 
                 };
                 double triangleWidth2 = 40;
@@ -434,7 +436,7 @@ namespace GimpSzymonMolitorys
 
                 Polygon triangle2 = new Polygon
                 {
-                    Points = new PointCollection { topPoint2, leftPoint2, rightPoint2 },
+                    Points = new System.Windows.Media.PointCollection { topPoint2, leftPoint2, rightPoint2 },
 
                 };
 
@@ -448,7 +450,7 @@ namespace GimpSzymonMolitorys
 
                 Polygon triangle3 = new Polygon
                 {
-                    Points = new PointCollection { topPoint3, leftPoint3, rightPoint3 },
+                    Points = new System.Windows.Media.PointCollection { topPoint3, leftPoint3, rightPoint3 },
 
                 };
 
@@ -625,6 +627,11 @@ namespace GimpSzymonMolitorys
                     MessageBox.Show($"Error during uploading image: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
+        }
+
+        private void OnApplySobelFilterClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

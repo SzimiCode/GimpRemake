@@ -44,6 +44,8 @@
                 </Rectangle>
                 <Button Content="Add Image" Width="100" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" 
                 Click="OnAddImageClick"/>
+                <Button Content="Use Sobel Filtr" Width="100" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left"
+                Click="OnApplySobelFilterClick"/>
             </ToolBar>
         </ToolBarPanel>
     </Grid>

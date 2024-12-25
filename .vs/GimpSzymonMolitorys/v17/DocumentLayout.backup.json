@@ -54,7 +54,8 @@
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\ColorPicker.xaml",
               "RelativeToolTip": "GimpSzymonMolitorys\\ColorPicker.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-23T11:14:03.488Z"
+              "WhenOpened": "2024-12-23T11:14:03.488Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -74,9 +75,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFICAAAAAAAAAAAIwGoCAABCAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "GimpSzymonMolitorys\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAGkCAAAAAAAAAIAwwHkCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T15:11:45.998Z",
               "EditorCaption": ""
@@ -90,7 +91,8 @@
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\GimpRemake\\GimpSzymonMolitorys\\testwind.xaml",
               "RelativeToolTip": "GimpSzymonMolitorys\\testwind.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-20T20:28:10.264Z"
+              "WhenOpened": "2024-12-20T20:28:10.264Z",
+              "EditorCaption": ""
             }
           ]
         }
