@@ -611,7 +611,8 @@ namespace GimpSzymonMolitorys
                     {
                         Source = bitmap,
                         Width = 200, 
-                        Height = 200 
+                        Height = 200,
+                       
                     };
 
                     // Add image to Canvas
