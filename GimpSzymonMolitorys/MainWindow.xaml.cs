@@ -35,8 +35,8 @@ namespace GimpSzymonMolitorys
         int drawStyle = 1;
         private bool click;
         private Brush currentBrush = Brushes.Black;
-        private Line selectedLine = null;
-        private bool isEditingStartPoint = false;
+        //private Line selectedLine = null;
+        //private bool isEditingStartPoint = false;
         public MainWindow()
         {
             InitializeComponent();
