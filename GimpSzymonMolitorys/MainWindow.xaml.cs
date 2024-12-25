@@ -600,29 +600,28 @@ namespace GimpSzymonMolitorys
             {
                 try
                 {
-                    // Ścieżka do wybranego pliku
+                    
                     string filePath = openFileDialog.FileName;
 
-                    // 3. Utwórz obiekt BitmapImage
+                    // Create BitmapImage
                     BitmapImage bitmap = new BitmapImage(new Uri(filePath));
 
-                    // 4. Utwórz kontrolkę Image
+                
                     Image imageControl = new Image
                     {
                         Source = bitmap,
-                        Width = 200, // Przykładowa szerokość
-                        Height = 200 // Przykładowa wysokość
+                        Width = 200, 
+                        Height = 200 
                     };
 
-                    // 5. Dodaj obraz na Canvas
-                    Canvas.SetLeft(imageControl, 50); // Pozycja X
-                    Canvas.SetTop(imageControl, 50);  // Pozycja Y
+                    // Add image to Canvas
+                    Canvas.SetLeft(imageControl, 50); 
+                    Canvas.SetTop(imageControl, 50); 
                     paintSurface.Children.Add(imageControl);
                 }
                 catch (Exception ex)
                 {
-                    // Obsłuż błędy wczytywania pliku
-                    MessageBox.Show($"Błąd podczas wczytywania obrazu: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"Error during uploading image: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
